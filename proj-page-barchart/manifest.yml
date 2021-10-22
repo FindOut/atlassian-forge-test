@@ -1,0 +1,15 @@
+modules:
+  jira:projectPage:
+    - key: proj-page-barchart-hello-world-project-page
+      resource: main
+      resolver:
+        function: resolver
+      title: proj-page-barchart
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/35d09608-4fd4-4d04-b251-c6ea88458de0
